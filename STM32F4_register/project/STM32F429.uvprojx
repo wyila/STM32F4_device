@@ -448,6 +448,11 @@
               <FileType>1</FileType>
               <FilePath>..\device\w25qxx.c</FilePath>
             </File>
+            <File>
+              <FileName>cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\device\cmd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

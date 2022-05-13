@@ -8,7 +8,11 @@
 #include "string.h"
 #include "usart.h"
 #include "i2c.h"
+#include "cmd.h"
+#include "ble.h"
+#include "sdram.h"
 #include <stdio.h>
+#include <string.h>
 
 #endif
 

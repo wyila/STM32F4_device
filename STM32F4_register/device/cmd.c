@@ -23,8 +23,8 @@ int cmd_proc(unsigned char *cmd, unsigned int len)
         case 11:
             if(!memcmp(cmd, "turn on led", len))
             {
-                __HAL_RCC_TIM3_CLK_DISABLE();//关闭定时器3，定时器3用于LED闪烁
-                GPIOC->ODR |= GPIO_PIN_13;//LED挂在PC13上
+                TIM3->CR1 &= ~1;//关闭定时器3，定时器3用于LED闪烁
+                GPIOC->ODR |= 1 << 13;//LED挂在PC13上
                 printf("Turn on the LED success\n");
                 return 1;
             }
@@ -32,8 +32,8 @@ int cmd_proc(unsigned char *cmd, unsigned int len)
         case 12:
             if(!memcmp(cmd, "turn off led", len))
             {
-                __HAL_RCC_TIM3_CLK_DISABLE();//关闭定时器3，定时器3用于LED闪烁
-                GPIOC->ODR &= ~GPIO_PIN_13;//LED挂在PC13上
+                TIM3->CR1 &= ~1;//关闭定时器3，定时器3用于LED闪烁
+                GPIOC->ODR &= ~(1 << 13);//LED挂在PC13上
                 printf("Turn off the LED success\n");
                 return 1;
             }
@@ -41,7 +41,7 @@ int cmd_proc(unsigned char *cmd, unsigned int len)
         case 20:
             if(!memcmp(cmd, "turn on flashing led", len))
             {
-                __HAL_RCC_TIM3_CLK_ENABLE();//打开定时器3，定时器3用于LED闪烁
+                TIM3->CR1 |= 1;//打开定时器3，定时器3用于LED闪烁
                 printf("Turn on the flashing LED success\n");
                 return 1;
             }
@@ -49,8 +49,8 @@ int cmd_proc(unsigned char *cmd, unsigned int len)
         case 21:
             if(!memcmp(cmd, "turn off flashing led", len))
             {
-                __HAL_RCC_TIM3_CLK_DISABLE();//关闭定时器3，定时器3用于LED闪烁
-                GPIOC->ODR &= ~GPIO_PIN_13;//LED挂在PC13上
+                TIM3->CR1 &= ~1;//关闭定时器3，定时器3用于LED闪烁
+                GPIOC->ODR &= ~(1 << 13);//LED挂在PC13上
                 printf("Turn off the flashing LED success\n");
                 return 1;
             }

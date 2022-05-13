@@ -4,7 +4,7 @@
 
 unsigned int delay_interrupt_cnt = 0;
 
-void delay_init(unsigned char sys_clock)
+void delay_init(void)
 {
     RCC->APB1ENR |= 1;//使能TIM2时钟
     TIM2->CR1 &= ~1;//0xFFFFFFFE;//关闭定时器，需要时再开启

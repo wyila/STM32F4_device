@@ -1,14 +1,11 @@
 #include "main.h"
-#include "ble.h"
-#include "sdram.h"
 
 unsigned char *sdram = (u8 *)Bank5_SDRAM_ADDR;
 
 int main(void)
 {
-    unsigned char buf[64];
     Stm32_Clock_Init(360,25,2,8);   //设置时钟,180Mhz
-    delay_init(180);
+    delay_init();
     SDRAM_Init();
     usart_init(115200);
     LED_Init();
