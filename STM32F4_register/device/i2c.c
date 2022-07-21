@@ -20,13 +20,15 @@ void IIC_Init(void)
 //产生IIC起始信号
 void IIC_Start(void)
 {
+    delay_us(1);
 	SDA_OUT();     //sda线输出
 	IIC_SDA = 1;
 	IIC_SCL = 1;
-	delay_us(4);
+	delay_us(2);
  	IIC_SDA = 0;//START:when CLK is high,DATA change form high to low
-	delay_us(4);
+	delay_us(2);
 	IIC_SCL = 0;//钳住I2C总线，准备发送或接收数据
+    delay_us(1);
 }
 
 //产生IIC停止信号
@@ -47,9 +49,9 @@ void IIC_Stop(void)
 u8 IIC_Wait_Ack(void)
 {
 	u8 ucErrTime = 0;
-	SDA_IN();      //SDA设置为输入
+	SDA_IN();//SDA设置为输入
 	IIC_SDA = 1;
-    delay_us(2);
+    delay_us(1);
 	IIC_SCL = 1;
     delay_us(2);
 	while(READ_SDA)
@@ -99,8 +101,7 @@ void IIC_NAck(void)
 void IIC_Send_Byte(u8 data)
 {
     u8 i;
-	SDA_OUT();
-    //IIC_SCL = 0;//拉低时钟开始数据传输
+	SDA_OUT();//设置为输出模式
     
     for(i = 0; i < 8; i++)
     {
@@ -108,9 +109,9 @@ void IIC_Send_Byte(u8 data)
         delay_us(1);
         
         IIC_SCL = 1;
-        delay_us(3);
-        IIC_SCL = 0;
         delay_us(2);
+        IIC_SCL = 0;
+        delay_us(1);
     }
 }
 
@@ -119,7 +120,7 @@ u8 IIC_Read_Byte(unsigned char ack)
 {
 	unsigned char i, receive = 0;
 	SDA_IN();//SDA设置为输入
-    
+    delay_us(1);
     for(i = 0; i < 8; i++)
 	{
         IIC_SCL = 0;
@@ -128,7 +129,7 @@ u8 IIC_Read_Byte(unsigned char ack)
         receive <<= 1;
         if(READ_SDA)
             receive |= 1;
-		delay_us(1);
+		delay_us(2);
     }
     if(!ack)
         IIC_NAck();//发送nACK
@@ -176,3 +177,6 @@ int IIC_WriteData(unsigned char subaddr, unsigned char *data, int len)
     IIC_Stop();//停止
     return 0;
 }
+
+
+

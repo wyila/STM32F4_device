@@ -1,0 +1,200 @@
+Dependencies for Project 'STM32F429', Target 'APP': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\user\main.c)(0x62A49089)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\user\main.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\delay.h)(0x6280A52F)
+I (..\device\led.h)(0x6280A52F)
+I (..\device\tim.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\device\usart.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (..\device\i2c.h)(0x6280A52F)
+I (..\device\cmd.h)(0x6280A52F)
+I (..\device\ble.h)(0x6280A52F)
+I (..\device\sdram.h)(0x6280A52F)
+F (..\user\sys.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\sys.o --omf_browse .\objects\sys.crf --depend .\objects\sys.d)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+F (..\device\delay.c)(0x62A489E6)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\device\delay.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\led.h)(0x6280A52F)
+F (..\device\led.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\device\led.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+F (..\device\tim.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\tim.o --omf_browse .\objects\tim.crf --depend .\objects\tim.d)
+I (..\device\tim.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\led.h)(0x6280A52F)
+F (..\device\usart.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (..\device\usart.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (D:\Software\keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (..\device\delay.h)(0x6280A52F)
+F (..\device\i2c.c)(0x62A48BEE)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (..\device\i2c.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\delay.h)(0x6280A52F)
+F (..\device\iap.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\iap.o --omf_browse .\objects\iap.crf --depend .\objects\iap.d)
+I (..\device\iap.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\usart.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\device\ble.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\ble.o --omf_browse .\objects\ble.crf --depend .\objects\ble.d)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\ble.h)(0x6280A52F)
+I (..\device\delay.h)(0x6280A52F)
+I (..\device\tim.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Software\keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\device\spi.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+I (..\device\spi.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+F (..\device\sdram.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\sdram.o --omf_browse .\objects\sdram.crf --depend .\objects\sdram.d)
+I (..\device\sdram.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\delay.h)(0x6280A52F)
+F (..\device\w25qxx.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\w25qxx.o --omf_browse .\objects\w25qxx.crf --depend .\objects\w25qxx.d)
+I (..\device\w25qxx.h)(0x6280A52F)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\spi.h)(0x6280A52F)
+I (..\device\delay.h)(0x6280A52F)
+I (..\device\usart.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\device\cmd.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\cmd.o --omf_browse .\objects\cmd.crf --depend .\objects\cmd.d)
+I (..\user\sys.h)(0x6280A52F)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+I (..\device\cmd.h)(0x6280A52F)
+I (..\device\i2c.h)(0x6280A52F)
+I (..\device\iap.h)(0x6280A52F)
+I (..\device\usart.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Software\keil5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\core\startup_stm32f429xx.s)(0x6280A52F)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F429xx SETA 1"--list .\listings\startup_stm32f429xx.lst --xref -o .\objects\startup_stm32f429xx.o --depend .\objects\startup_stm32f429xx.d)
+F (..\core\system_stm32f4xx.c)(0x6280A52F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\device -I ..\user-ID:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="536" -DSTM32F429xx -DSTM32F429xx-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (..\core\stm32f4xx.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x5F6AD1D6)
+I (..\core\core_cm4.h)(0x6280A52F)
+I (D:\Software\keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\core\cmsis_version.h)(0x6280A52F)
+I (..\core\cmsis_compiler.h)(0x6280A52F)
+I (..\core\cmsis_armcc.h)(0x6280A52F)
+I (..\core\mpu_armv7.h)(0x6280A52F)
+I (D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5F6AD1D6)
+F (..\README.md)(0x6280A52F)()

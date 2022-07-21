@@ -8,14 +8,49 @@ void delay_init(void)
 {
     RCC->APB1ENR |= 1;//使能TIM2时钟
     TIM2->CR1 &= ~1;//0xFFFFFFFE;//关闭定时器，需要时再开启
-    TIM2->ARR = 89;//自动装载值
-    TIM2->PSC = 0;//分频系数
+    TIM2->ARR = 1999;//自动装载值 1ms
+    TIM2->PSC = 44;//分频系数 频率：2MHz
     TIM2->CR1 &= ~0x310;//向上计数，不分频
     TIM2->DIER |= 1;//允许更新事件
     delay_interrupt_cnt = 0;
-    //TIM2->CR1 |= 1;//开启定时器
     MY_NVIC_SET(3, 0, TIM2_IRQn);//设置中断优先级
+    TIM2->CR1 |= 1;//开启定时器
 }
+
+void delay_ms(unsigned short ms)
+{
+    //TIM2->PSC = 8; //频率设为10MHz
+    //TIM2->ARR = 9999;//大概一毫秒中断一次
+    
+    TIM2->CR1 &= ~1;//关闭定时器
+    TIM2->CNT = 0;//计数清零
+    delay_interrupt_cnt = 0;
+    TIM2->CR1 |= 0x01;//开启定时器
+    while(delay_interrupt_cnt < ms);
+    //delay_interrupt_cnt = 0;
+    
+    //TIM2->PSC = 0; //不进行分频
+    //TIM2->ARR = 89;//大概1us中断一次
+}
+
+void delay_us(unsigned int us)
+{
+    unsigned int cnt;
+    unsigned int tmp;
+    
+    delay_interrupt_cnt = 0;
+    cnt = TIM2->CNT + us * 2;
+    while(1)
+    {
+        tmp = TIM2->CNT + delay_interrupt_cnt * 2000;
+        if(tmp >= cnt)
+            break;
+    }
+    
+    
+}
+
+
 
 void TIM2_IRQHandler(void)
 {
@@ -25,29 +60,6 @@ void TIM2_IRQHandler(void)
         TIM2->SR &= ~(u32)0x01;
         //LED0 = !LED0;
     }
-}
-
-void delay_ms(unsigned short ms)
-{
-    TIM2->PSC = 899; //频率设为100KHz
-    TIM2->ARR = 99;//大概一毫秒中断一次
-    TIM2->CNT = 0;//计数清零
-    TIM2->CR1 |= 0x01;//开启定时器
-    while(delay_interrupt_cnt < ms);
-    delay_interrupt_cnt = 0;
-    TIM2->CR1 &= ~(u32)0x01;
-    
-    TIM2->PSC = 0; //不进行分频
-    TIM2->ARR = 90 - 1;//大概1us中断一次
-}
-
-void delay_us(unsigned int us)
-{
-    TIM2->CNT = 0;
-    TIM2->CR1 |= 0x01;//开启定时器
-    while(delay_interrupt_cnt < us);
-    delay_interrupt_cnt = 0;
-    TIM2->CR1 &= ~(u32)0x1;//关掉定时器
 }
 
 /*

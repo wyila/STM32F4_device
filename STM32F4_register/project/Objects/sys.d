@@ -1,0 +1,11 @@
+.\objects\sys.o: ..\user\sys.c
+.\objects\sys.o: ..\user\sys.h
+.\objects\sys.o: ..\core\stm32f4xx.h
+.\objects\sys.o: D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h
+.\objects\sys.o: ..\core\core_cm4.h
+.\objects\sys.o: D:\Software\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sys.o: ..\core\cmsis_version.h
+.\objects\sys.o: ..\core\cmsis_compiler.h
+.\objects\sys.o: ..\core\cmsis_armcc.h
+.\objects\sys.o: ..\core\mpu_armv7.h
+.\objects\sys.o: D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

@@ -1,0 +1,12 @@
+.\objects\led.o: ..\device\led.c
+.\objects\led.o: ..\device\led.h
+.\objects\led.o: ..\user\sys.h
+.\objects\led.o: ..\core\stm32f4xx.h
+.\objects\led.o: D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h
+.\objects\led.o: ..\core\core_cm4.h
+.\objects\led.o: D:\Software\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: ..\core\cmsis_version.h
+.\objects\led.o: ..\core\cmsis_compiler.h
+.\objects\led.o: ..\core\cmsis_armcc.h
+.\objects\led.o: ..\core\mpu_armv7.h
+.\objects\led.o: D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

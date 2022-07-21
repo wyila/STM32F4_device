@@ -1,0 +1,16 @@
+.\objects\w25qxx.o: ..\device\w25qxx.c
+.\objects\w25qxx.o: ..\device\w25qxx.h
+.\objects\w25qxx.o: ..\user\sys.h
+.\objects\w25qxx.o: ..\core\stm32f4xx.h
+.\objects\w25qxx.o: D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h
+.\objects\w25qxx.o: ..\core\core_cm4.h
+.\objects\w25qxx.o: D:\Software\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\w25qxx.o: ..\core\cmsis_version.h
+.\objects\w25qxx.o: ..\core\cmsis_compiler.h
+.\objects\w25qxx.o: ..\core\cmsis_armcc.h
+.\objects\w25qxx.o: ..\core\mpu_armv7.h
+.\objects\w25qxx.o: D:\Software\keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\w25qxx.o: ..\device\spi.h
+.\objects\w25qxx.o: ..\device\delay.h
+.\objects\w25qxx.o: ..\device\usart.h
+.\objects\w25qxx.o: D:\Software\keil5\ARM\ARMCC\Bin\..\include\stdio.h
